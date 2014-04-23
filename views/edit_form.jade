@@ -1,0 +1,10 @@
+html
+  body
+    form(method='post', action='/3')
+      input(type='hidden', value='put', name='_method')
+      input(type='submit', value='Send to Update')
+    form(method='post', action='/3')
+      input(type='hidden', value='delete', name='_method')
+      input(type='submit', value='Send to Destroy')
+    br
+    input(type='button', onclick='history.go(-1)', value='Go Back')
